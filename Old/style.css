@@ -1,0 +1,89 @@
+
+@font-face {
+	font-family: 'Prime';
+	src: url('Prime-Light.otf');
+	font-weight: 300;
+}
+
+@font-face {
+	font-family: 'Prime';
+	src: url('Prime-Regular.otf');
+	font-weight: 400;
+}
+
+body {
+	margin: 0;
+	background-color: #5e9bdd;
+}
+
+section#main {
+	display: inline-block;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	padding: 1.75em;
+	padding-left: 1em;
+	border-radius: 20px;
+	background-color: #fff;
+	white-space: nowrap;
+	overflow: hidden;
+	transform: translate(-50%, -50%);
+}
+
+section#main:before {
+	content: '';
+	position: absolute;
+	top: 0;
+	bottom: -25em;
+	left: 0;
+	right: -20em;
+	background-color: #184370;
+	background-image: url('water.png');
+	background-position: center left;
+	background-size: 35px 100%;
+	background-repeat: no-repeat;
+	z-index: -1;
+	transform: rotate(-38deg);
+	transform-origin: 0% 0%;
+}
+
+section#main:after {
+	content: '';
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-image: url('mountains.png');
+	background-position: bottom right;
+	background-size: 30em auto;
+	background-repeat: no-repeat;
+}
+
+h2 {
+	display: inline-block;
+	color: #215b9a;
+	padding: 0.25em;
+	padding-top: 2.5em;
+	margin: 0;
+	margin-right: -0.5em;
+	font-family: 'Prime', sans-serif;
+	font-size: 4.5em;
+	font-weight: 300;
+	vertical-align: bottom;
+}
+
+h2 span {
+	font-weight: 400;
+}
+
+h1 {
+	display: inline-block;
+	color: #fff;
+	margin: 0;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 15em;
+	font-weight: 700;
+	text-align: center;
+	vertical-align: top;
+}

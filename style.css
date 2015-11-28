@@ -1,0 +1,75 @@
+
+@font-face {
+	font-family: 'Makhina';
+	src: url('Makhina.ttf');
+}
+
+@font-face {
+	font-family: 'Milano';
+	src: url('Milano.ttf');
+}
+
+
+html {
+	font-size: 16px;
+}
+
+body {
+	height: 100vh;
+	margin: 0;
+	background-color: #3498db;
+}
+
+section#wave {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 80vh;
+	height: 80vh;
+	background-color: #1b557a;
+	border: 15px solid #1b557a;
+	border-radius: 50%;
+	white-space: nowrap;
+	overflow-x: hidden;
+	transform: translate(-50%, -50%);
+}
+
+section#wave h1 {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	color: #fff;
+	margin: 0;
+	font-family: 'Makhina', sans-serif;
+	font-size: 4.5em;
+	font-weight: 400;
+	line-height: 1.125em;
+	text-align: center;
+	text-transform: uppercase;
+	z-index: 100;
+	transform: translate(-50%, -50%);
+}
+
+section#wave h1 span#teamNumber {
+	font-family: 'Makhina', sans-serif;
+	font-size: 3em;
+	font-weight: 400;
+	line-height: 1.25em;
+}
+
+section#wave h1 span.break {
+	font-size: 0.75em;
+	vertical-align: middle;
+}
+
+section#wave section {
+	position: absolute;
+	height: 67.5vh;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-image: url('water.png');
+	background-position: center bottom;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
